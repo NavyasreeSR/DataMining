@@ -1,0 +1,85 @@
+Related work:
+
+2. Related Work
+This section explores relevant literature and studies that inform our approach to creating a consumer digital twin using grocery shopping data.
+
+2.1 Garanayak, Mamata & Mohanty, Sachi & Jagadev, Alok & Sahoo, Sipra [1]
+Garanayak, Mamata & Mohanty [1] delve into methodologies that closely align with our proposed solution for recommendation systems based on collaborative filtering and item-based similarity. Their work emphasizes the importance of cosine similarity and the KNN Basic model in generating accurate item recommendations, which resonates with our approach.
+
+2.2 p.Phorasim and L. Yu [2]
+p.Phorasim and L. Yu [2] provides crucial insights into potential pitfalls and challenges faced in similar studies related to recommendation systems and data preprocessing. Their examination of data biases, model evaluation techniques, and algorithmic performance is instrumental in guiding our methodology and addressing key issues in our project.
+
+2.3 S. Gong [3]
+S. Gong [3] present a comprehensive review of item-based collaborative filtering algorithms and their applications in recommendation systems. Their study highlights the significance of feature engineering, similarity metrics, and model evaluation in optimizing recommendation accuracy, which aligns with our focus on item-item similarities and model effectiveness.
+
+
+
+Methodology:
+
+3. Methodology
+This section describes the methods used in our research, including algorithms, experimental design, and data sources.
+
+3.1 Data Collection
+We collected our dataset from [specific sources or methods used to obtain the data]. The dataset includes attributes such as Date, Item, Price, Quantity, Mode of Payment, and Coupon, with a total of 6700 records.
+
+3.2 Data Preprocessing
+Before analysis, we performed data preprocessing steps including:
+
+Handling missing values and outliers.
+Encoding categorical variables (e.g., Item, Mode of Payment) using one-hot encoding or label encoding.
+Feature scaling and normalization for numerical attributes (e.g., Price, Quantity).
+3.3 Similarity Calculation
+To implement item-based collaborative filtering, we calculated item-item similarities using cosine similarity. This involved:
+
+Transforming the dataset into a suitable format for similarity calculations.
+Using the cosine similarity metric to measure similarities between items based on their attributes.
+3.4 KNN Basic Model
+We employed the KNN Basic model for item-based collaborative filtering. The key steps included:
+
+Identifying the K nearest neighbors for each item based on item-item similarities.
+Aggregating information from the nearest neighbors to make predictions.
+Generating item recommendations for a single consumer based on their past purchase history and item similarities.
+3.5 Experimental Design
+Our experimental design involved:
+
+Splitting the dataset into training and testing sets for model evaluation.
+Tuning hyperparameters such as the K value in the KNN Basic model to optimize performance.
+Evaluating the model's accuracy and effectiveness in recommending items for the consumer digital twin.
+
+
+
+
+
+
+Results:
+
+we used precision and recall to calculate model performance.Below is output we got.
+
+Recommended Items: ['bread', 'rice', 'yogurt', 'mushrooms']
+Actual Items: ['bread', 'rice', 'mushrooms']
+Precision: 0.75
+Recall: 0.67
+F1 Score: 0.56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References:
+1.Garanayak, Mamata & Mohanty, Sachi & Jagadev, Alok & Sahoo, Sipra. (2019). Recommender system using item based collaborative filtering (CF) and K-means. International Journal of Knowledge-based and Intelligent Engineering Systems. 23. 93-101. 10.3233/KES-190402.
+
+2 p.Phorasim and L. Yu, Movies recommendation system us-ing collaborative ﬁltering and k-means, International Journalof Advanced Computer Research 7(29) (2017), ISSN (Print):2249–7277 ISSN (Online): 2277–7970. http://dx.doi.org/10.19101/IJACR.2017.729004
+
+3. S. Gong, A collaborative ﬁltering recommendation algorithmbased on user clustering and item clustering, Journal of Soft-ware 5(7) (2010), 745–752.
+Methodology:
